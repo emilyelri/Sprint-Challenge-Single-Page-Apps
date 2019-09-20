@@ -17,11 +17,12 @@ export default function WelcomePage() {
 
   const Image = styled.img`
     border: 2px solid black;
+    margin: 50px;
   `;
 
   const CharLink = styled.span`
     font-size: 2rem;
-    margin: 20px;
+    margin: 50px 20px;
   `;
 
   return (
