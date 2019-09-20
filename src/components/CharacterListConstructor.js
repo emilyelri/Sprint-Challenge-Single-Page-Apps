@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
-import Search from './Search';
+import SearchForm from './SearchForm';
 import CharacterList from './CharacterList';
 import Navi from './Navi';
 
@@ -19,10 +19,12 @@ export default function() {
         flex-wrap: wrap;
         justify-content: space-evenly;
     `;
+
+    const characters = CharacterList.characters;
     
     return (
         <Page>
-            <Search />
+            <SearchForm characters={characters} />
             <Grid>
             <CharacterList className="grid-view" />
             </Grid>
